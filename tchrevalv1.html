@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+<div id="heading1">
+		<h1>SCIS Teacher evaluation</h1>
+
+</div>
+
+<script language="JavaScript">
+	function showInput() {
+		document.getElementById('display').innerHTML = document.getElementById("tchrID").value;
+	}
+</script>
+
+<div id="evalform">
+	<form>
+		Teacher's code:<br>
+		<input type="code" id="tchrID">
+		<br>
+		<input type="submit" onclick="showInput();">
+	</form>
+</div>
+<br>
+<!--add something that if code is submitted will eventually show the teacher to be evaluated--> 
+<p><span id='display'></span></p>
+</body>	
+</html>
